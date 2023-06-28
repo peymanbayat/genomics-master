@@ -60,6 +60,7 @@ def predict():
             st.write('Congratulation!',name,'The Probability of Your Ilness is Very Low')
         else:
             st.write(name,", The Probability of Your Ilness is Relatively High")
+            st.markdown('[Visit Here](https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-prevention/art-20047639#:~:text=Diabetes%20prevention%3A%205%20tips%20for%20taking%20control%201,Skip%20fad%20diets%20and%20make%20healthier%20choices%20)')
 
 
 def main():
