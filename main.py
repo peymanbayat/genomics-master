@@ -42,21 +42,12 @@ def predict():
     st.markdown('Tag-value pairs of disease database name and identifier')
 
        
-  
- 
     dpf = st.number_input("CLNDISDBINCL:")
     st.markdown('For included Variant: Tag-value pairs of disease database name and identifier')
-
-
-
-    
-   
-
         
 
     age = st.number_input("CLNDN:")
     st.markdown('Preferred ClinVar disease name for the concept specified by disease identifiers in CLNDISDB:')
-
 
 
     submit = st.button('Predict')
@@ -65,7 +56,7 @@ def predict():
     if submit:
         prediction = classifier.predict([[pregnancy, glucose, bp, skin, insulin, bmi, dpf, age]])
         if prediction == 0:
-            st.write('Congratulation!', name,'It seems you have selected a fit type of Antibiotic')
+            st.write('Congratulation!', name,'Probobility Of Illness is Low')
         else:
             st.write(name,", It seems you can choose a more fitted Antibiotic")
 
