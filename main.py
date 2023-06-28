@@ -32,6 +32,16 @@ def predict():
     bp =  st.number_input("REF:")
     st.markdown('Reference Allele')
 
+    skin = st.number_input("ALT:")
+    st.markdown('Alternaete Allele')
+
+   
+
+        
+
+    age = st.number_input("CLNDN:")
+    st.markdown('Preferred ClinVar disease name for the concept specified by disease identifiers in CLNDISDB:')
+
 
 
     submit = st.button('Predict')
