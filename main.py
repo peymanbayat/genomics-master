@@ -22,9 +22,9 @@ def predict():
     st.markdown('This trained dataset is originally collected by GenomicsMaster Company.')
     st.markdown('It will be very greatful if you share your data in this regard with us.')
 
-    name = st.text_input("Patient's Name (Optional)")
-    pregnancy = st.number_input("Please connect the device to your computer, Data Reading from the Devics:")
-    st.markdown('Number of time periods consideration in the plot (read from device)')
+    name = st.text_input("Name:")
+    pregnancy = st.number_input("CHROM:")
+    st.markdown('Chromosome the variant is located on')
     
     glucose = st.number_input("Plasma Glucose Concentration :")
     st.markdown('Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test')
