@@ -18,7 +18,7 @@ def predict():
     st.sidebar.header('Birth Genomics Co.')
     # select = st.sidebar.selectbox('Select Form', ['Form 1'], key='1')
     # if not st.sidebar.checkbox("Hide", True, key='2'):
-    st.title('GenomicsMaster's Prediction Product')
+    st.title('GenomicsMaster Prediction Product')
     st.markdown('This trained dataset is originally collected by GenomicsMaster Company.')
     st.markdown('A Genome-Base Tool to Predict Future Possible Illnesses')
 
