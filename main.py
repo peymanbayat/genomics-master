@@ -57,7 +57,7 @@ def predict():
     if submit:
         prediction = classifier.predict([[pregnancy, glucose, bp, skin, insulin, bmi, dpf, age]])
         if prediction == 0:
-            st.write('Congratulation!',name,'The Probability of Your Ilness is Very Low')
+            st.write('Congratulation!',name,'The Probability is Very Low')
         else:
             st.write(name,", The Probability of Your Ilness is Relatively High")
              
