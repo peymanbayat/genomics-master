@@ -56,9 +56,9 @@ def predict():
     if submit:
         prediction = classifier.predict([[pregnancy, glucose, bp, skin, insulin, bmi, dpf, age]])
         if prediction == 0:
-            st.write('Congratulation!', name,'Probobility Of Illness is Low')
+            st.write('Congratulation!', name,'Probability Of Illness is Low')
         else:
-            st.write(name,", It seems you can choose a more fitted Antibiotic")
+            st.write(name,", Probability Of Illness is Relatively High")
 
 def main():
     new_title = '<p style="font-size: 42px;">Welcome The Congenital Disabilities Prediction App!</p>'
