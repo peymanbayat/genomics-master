@@ -15,7 +15,7 @@ pickle_in = open('Diabetes.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def predict():
-    st.sidebar.header('Birth Genomics Co.')
+    st.sidebar.header('GenomicsMaster Co.')
     # select = st.sidebar.selectbox('Select Form', ['Form 1'], key='1')
     # if not st.sidebar.checkbox("Hide", True, key='2'):
     st.title('GenomicsMaster Prediction Product')
@@ -60,16 +60,15 @@ def predict():
             st.write('Congratulation!',name,'The Probability of Your Ilness is Very Low')
         else:
             st.write(name,", The Probability of Your Ilness is Relatively High")
-            st.markdown('[Visit Here](https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-prevention/art-20047639#:~:text=Diabetes%20prevention%3A%205%20tips%20for%20taking%20control%201,Skip%20fad%20diets%20and%20make%20healthier%20choices%20)')
 
 
 def main():
-    new_title = '<p style="font-size: 42px;">Welcome The Diabetes Prediction App!</p>'
+    new_title = '<p style="font-size: 42px;">Welcome Ilnesses Possibility Prediction App!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     The application is built using Streamlit  
-    to demonstrate Diabetes Prediction. It performs prediction on multiple parameters
-    [here](https://github.com/).""")
+    
+    
     st.sidebar.title("Select Activity")
     choice = st.sidebar.selectbox(
         "MODE", ("About", "Predict Future Possible Illnesses"))
