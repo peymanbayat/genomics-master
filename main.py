@@ -42,28 +42,16 @@ def predict():
     bmi = st.number_input("CLNDISDB:")
     st.markdown('Tag-value pairs of disease database name and identifier')
 
-    
        
-   
-    dpf = st.selectbox(
-    'Antibiotic Types',
-    ('1: "Penicillins"', '2: "Cephalosporins"', '3: "Tetracyclines"', '4:"Aminoglycosides"'))
-    st.write('You selected:', dpf)
+  
+   dpf = st.number_input("CLNDISDBINCL:")
+    st.markdown('For included Variant: Tag-value pairs of disease database name and identifier')
 
-    if dpf == '1: "Penicillins"':
-        dpf = 1
-    if dpf == '2: "Cephalosporins"':
-        dpf = 2
-    if dpf == '3: "Tetracyclines"':
-        dpf = 3
-    if dpf == '4: "Aminoglycosides"':
-        dpf =4
-    
 
         
 
-    age = st.number_input("Age:")
-    st.markdown('Age: Age (years)')
+    age = st.number_input("CLNDN:")
+    st.markdown('Preferred ClinVar disease name for the concept specified by disease identifiers in CLNDISDB:')
 
     submit = st.button('Predict')
     st.markdown('Outcome: Class variable (0 or 1)')
