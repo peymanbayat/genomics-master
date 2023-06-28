@@ -15,11 +15,11 @@ pickle_in = open('Diabetes.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def predict():
-    st.sidebar.header('IntelBioMax Co.')
+    st.sidebar.header('GenomicsMaster Co.')
     # select = st.sidebar.selectbox('Select Form', ['Form 1'], key='1')
     # if not st.sidebar.checkbox("Hide", True, key='2'):
-    st.title('IntelBioMax (Suitable Type of Antibiotic Prediction)')
-    st.markdown('This trained dataset is originally collected by IntelBioMax Company.')
+    st.title('GenomicsMaster (Illness Prediction Based on Genome)')
+    st.markdown('This trained dataset is originally collected by GenomicsMaster Company.')
     st.markdown('It will be very greatful if you share your data in this regard with us.')
 
     name = st.text_input("Patient's Name (Optional)")
