@@ -23,8 +23,8 @@ def predict():
     st.markdown('It will be very greatful if you share your data in this regard with us.')
 
     name = st.text_input("Name:")
-    pregnancy = st.number_input("CHROM:")
-    st.markdown('Chromosome the variant is located on')
+    bp =  st.number_input("REF:")
+    st.markdown('Reference Allele')
     
     glucose = st.number_input("POS:")
     st.markdown('Position on the chromosome the variant is located on')
@@ -32,6 +32,8 @@ def predict():
     bp =  st.number_input("REF:")
     st.markdown('Reference Allele')
 
+    pregnancy = st.number_input("CHROM:")
+    st.markdown('Chromosome the variant is located on')
    
 
     insulin = st.number_input("AF_ESP:")
