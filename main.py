@@ -61,12 +61,11 @@ def predict():
             st.write(name,", Probability Of Illness is Relatively High")
 
 def main():
-    new_title = '<p style="font-size: 42px;">Welcome The Congenital Disabilities Prediction App!</p>'
+    new_title = '<p style="font-size: 42px;">Welcome The Genome Based Illness Prediction App!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     The application is built using Streamlit  
-    to demonstrate Fit Type of Antibiotic Prediction. It performs prediction on multiple parameters
-                                  """)
+                                      """)
     st.sidebar.title("Select Activity")
     choice = st.sidebar.selectbox(
         "MODE", ("About", "Predict Antibiotic Type Effects"))
