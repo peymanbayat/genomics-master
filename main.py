@@ -38,6 +38,14 @@ def predict():
     insulin = st.number_input("AF_ESP:")
     st.markdown('Allele frequencies from GO-ESP')
 
+    bmi = st.number_input("CLNDISDB:")
+    st.markdown('Tag-value pairs of disease database name and identifier')
+
+       
+  
+ 
+
+
 
     
    
