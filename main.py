@@ -15,12 +15,12 @@ pickle_in = open('Diabetes.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 def predict():
-    st.sidebar.header('Diabetes Prediction')
+    st.sidebar.header('Birth Genomics Co.')
     # select = st.sidebar.selectbox('Select Form', ['Form 1'], key='1')
     # if not st.sidebar.checkbox("Hide", True, key='2'):
-    st.title('Diabetes Prediction(Only for Females Above 21 Years of Age)')
-    st.markdown('This trained dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes.')
-    st.markdown('Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.')
+    st.title('GenomicsMaster's Prediction Product')
+    st.markdown('This trained dataset is originally collected by GenomicsMaster Company.')
+    st.markdown('A Genome-Base Tool to Predict Future Possible Illnesses')
 
     name = st.text_input("Name:")
     pregnancy = st.number_input("CHROM:")
@@ -57,10 +57,9 @@ def predict():
     if submit:
         prediction = classifier.predict([[pregnancy, glucose, bp, skin, insulin, bmi, dpf, age]])
         if prediction == 0:
-            st.write('Congratulation!',name,'You are not diabetic')
+            st.write('Congratulation!',name,'The Probability of Your Ilness is Very Low')
         else:
-            st.write(name,", we are really sorry to say but it seems like you are Diabetic. But don't lose hope, we have suggestions for you:")
-            st.markdown('[Visit Here](https://www.mayoclinic.org/diseases-conditions/type-2-diabetes/in-depth/diabetes-prevention/art-20047639#:~:text=Diabetes%20prevention%3A%205%20tips%20for%20taking%20control%201,Skip%20fad%20diets%20and%20make%20healthier%20choices%20)')
+            st.write(name,", The Probability of Your Ilness is Relatively High")
 
 
 def main():
@@ -72,7 +71,7 @@ def main():
     [here](https://github.com/).""")
     st.sidebar.title("Select Activity")
     choice = st.sidebar.selectbox(
-        "MODE", ("About", "Predict Diabetes"))
+        "MODE", ("About", "Predict Future Possible Illnesses"))
     if choice == "Predict Diabetes":
         read_me_0.empty()
         read_me.empty()
