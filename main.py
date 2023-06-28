@@ -60,14 +60,14 @@ def predict():
             st.write('Congratulation!',name,'The Probability of Your Ilness is Very Low')
         else:
             st.write(name,", The Probability of Your Ilness is Relatively High")
-
+             
 
 def main():
     new_title = '<p style="font-size: 42px;">Welcome Ilnesses Possibility Prediction App!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     The application is built using Streamlit  
-    
+                                  """)
     
     st.sidebar.title("Select Activity")
     choice = st.sidebar.selectbox(
