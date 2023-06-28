@@ -26,14 +26,14 @@ def predict():
     pregnancy = st.number_input("CHROM:")
     st.markdown('Chromosome the variant is located on')
     
-    glucose = st.number_input("Plasma Glucose Concentration :")
-    st.markdown('Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test')
+    glucose = st.number_input("POS:")
+    st.markdown('Position on the chromosome the variant is located on')
 
-    bp =  st.number_input("Diastolic blood pressure (mm Hg):")
-    st.markdown('BloodPressure: Diastolic blood pressure (mm Hg)')
+    bp =  st.number_input("REF:")
+    st.markdown('Reference Allele')
 
-    skin = st.number_input("Triceps skin fold thickness (mm):")
-    st.markdown('SkinThickness: Triceps skin fold thickness (mm)')
+    skin = st.number_input("ALT:")
+    st.markdown('Alternaete Allele')
 
     insulin = st.number_input("2-Hour serum insulin (mu U/ml):")
     st.markdown('Insulin: 2-Hour serum insulin (mu U/ml)')
