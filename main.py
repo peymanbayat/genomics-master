@@ -32,11 +32,13 @@ def predict():
     bp =  st.number_input("REF:")
     st.markdown('Reference Allele')
 
-    skin = st.number_input("ALT:")
-    st.markdown('Alternaete Allele')
+   
 
     insulin = st.number_input("AF_ESP:")
     st.markdown('Allele frequencies from GO-ESP')
+
+    skin = st.number_input("ALT:")
+    st.markdown('Alternaete Allele')
 
     bmi = st.number_input("CLNDISDB:")
     st.markdown('Tag-value pairs of disease database name and identifier')
