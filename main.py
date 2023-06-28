@@ -72,7 +72,7 @@ def main():
     st.sidebar.title("Select Activity")
     choice = st.sidebar.selectbox(
         "MODE", ("About", "Predict Future Possible Illnesses"))
-    if choice == "Predict Diabetes":
+    if choice == "Predict Illness":
         read_me_0.empty()
         read_me.empty()
         predict()
