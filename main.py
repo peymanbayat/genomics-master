@@ -35,16 +35,15 @@ def predict():
     skin = st.number_input("ALT:")
     st.markdown('Alternaete Allele')
 
-    insulin = st.number_input("2-Hour serum insulin (mu U/ml):")
-    st.markdown('Insulin: 2-Hour serum insulin (mu U/ml)')
+    insulin = st.number_input("AF_ESP:")
+    st.markdown('Allele frequencies from GO-ESP')
 
 
-    bmi = st.number_input("Body mass index (weight in kg/(height in m)^2):")
-    st.markdown('BMI: Body mass index (weight in kg/(height in m)^2)')
+    bmi = st.number_input("CLNDISDB:")
+    st.markdown('Tag-value pairs of disease database name and identifier')
 
     
-    
-   
+       
    
     dpf = st.selectbox(
     'Antibiotic Types',
