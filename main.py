@@ -23,31 +23,31 @@ def predict():
     st.markdown('Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.')
 
     name = st.text_input("Name:")
-    pregnancy = st.number_input("No. of times pregnant:")
-    st.markdown('Pregnancies: Number of times pregnant')
+    pregnancy = st.number_input("CHROM:")
+    st.markdown('Chromosome the variant is located on')
 
-    glucose = st.number_input("Plasma Glucose Concentration :")
-    st.markdown('Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test')
+    glucose = st.number_input("POS:")
+    st.markdown('Position on the chromosome the variant is located on')
 
-    bp =  st.number_input("Diastolic blood pressure (mm Hg):")
-    st.markdown('BloodPressure: Diastolic blood pressure (mm Hg)')
+    bp =  st.number_input("REF:")
+    st.markdown('Reference Allele')
 
-    skin = st.number_input("Triceps skin fold thickness (mm):")
-    st.markdown('SkinThickness: Triceps skin fold thickness (mm)')
+    skin = st.number_input("ALT:")
+    st.markdown('Alternaete Allele')
 
-    insulin = st.number_input("2-Hour serum insulin (mu U/ml):")
-    st.markdown('Insulin: 2-Hour serum insulin (mu U/ml)')
-
-
-    bmi = st.number_input("Body mass index (weight in kg/(height in m)^2):")
-    st.markdown('BMI: Body mass index (weight in kg/(height in m)^2)')
-
-    dpf = st.number_input("Diabetes Pedigree Function:")
-    st.markdown('DiabetesPedigreeFunction: Diabetes pedigree function')
+    insulin = st.number_input("AF_ESP:")
+    st.markdown('Allele frequencies from GO-ESP')
 
 
-    age = st.number_input("Age:")
-    st.markdown('Age: Age (years)')
+    bmi = st.number_input("CLNDISDB:")
+    st.markdown('Tag-value pairs of disease database name and identifier')
+
+    dpf = st.number_input("CLNDISDBINCL:")
+    st.markdown('For included Variant: Tag-value pairs of disease database name and identifier')
+
+
+    age = st.number_input("CLNDN:")
+    st.markdown('ClinVar's preferred disease name for the concept specified by disease identifiers in CLNDISDB')
 
 
     submit = st.button('Predict')
