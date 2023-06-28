@@ -32,26 +32,7 @@ def predict():
     bp =  st.number_input("REF:")
     st.markdown('Reference Allele')
 
-    skin = st.number_input("ALT:")
-    st.markdown('Alternaete Allele')
 
-    insulin = st.number_input("AF_ESP:")
-    st.markdown('Allele frequencies from GO-ESP')
-
-
-    bmi = st.number_input("CLNDISDB:")
-    st.markdown('Tag-value pairs of disease database name and identifier')
-
-       
-  
-   dpf = st.number_input("CLNDISDBINCL:")
-    st.markdown('For included Variant: Tag-value pairs of disease database name and identifier')
-
-
-        
-
-    age = st.number_input("CLNDN:")
-    st.markdown('Preferred ClinVar disease name for the concept specified by disease identifiers in CLNDISDB:')
 
     submit = st.button('Predict')
     st.markdown('Outcome: Class variable (0 or 1)')
