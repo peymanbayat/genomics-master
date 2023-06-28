@@ -47,7 +47,7 @@ def predict():
 
 
     age = st.number_input("CLNDN:")
-    st.markdown('ClinVar's preferred disease name for the concept specified by disease identifiers in CLNDISDB')
+    st.markdown('Preferred ClinVar disease name for the concept specified by disease identifiers in CLNDISDB')
 
 
     submit = st.button('Predict')
