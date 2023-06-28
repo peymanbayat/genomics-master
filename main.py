@@ -35,6 +35,11 @@ def predict():
     skin = st.number_input("ALT:")
     st.markdown('Alternaete Allele')
 
+    insulin = st.number_input("AF_ESP:")
+    st.markdown('Allele frequencies from GO-ESP')
+
+
+    
    
 
         
