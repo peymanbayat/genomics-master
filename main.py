@@ -44,6 +44,8 @@ def predict():
        
   
  
+    dpf = st.number_input("CLNDISDBINCL:")
+    st.markdown('For included Variant: Tag-value pairs of disease database name and identifier')
 
 
 
