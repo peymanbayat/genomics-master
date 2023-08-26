@@ -11,6 +11,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 import pickle
 
+
 pickle_in = open('Diabetes.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
